@@ -12,7 +12,23 @@
 					"strict" : false
 				},
 				{
+					"name" : "B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "I[0]",
+					"strict" : false
+				},
+				{
 					"name" : "A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "I[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B[1]",
 					"strict" : false
 				},
 				{

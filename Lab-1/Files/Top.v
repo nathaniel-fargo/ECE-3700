@@ -5,6 +5,11 @@ module Top (
 	output [1:0] F
 );
 
-	assign F = A;
+	Structural struct_inst(
+		.A(A),
+		.B(B),
+		.I(I),
+		.F(F)
+	);
 
 endmodule
