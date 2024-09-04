@@ -8,7 +8,7 @@ module TestBench;
 	reg [3:0] num;
 	
 
-	Structural1 struct_inst (
+	Structural struct_inst (
 		.A(A),
 		.B(B),
 		.I(I),

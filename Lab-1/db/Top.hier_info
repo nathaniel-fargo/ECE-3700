@@ -1,0 +1,11 @@
+|Top
+A[0] => F[0].DATAIN
+A[1] => F[1].DATAIN
+B[0] => ~NO_FANOUT~
+B[1] => ~NO_FANOUT~
+I[0] => ~NO_FANOUT~
+I[1] => ~NO_FANOUT~
+F[0] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
