@@ -1,0 +1,15 @@
+module tb_Block1;
+
+	reg [1:0] A;
+	reg [1:0] B;
+	reg [1:0] I;
+	wire [1:0] F;
+	
+
+	Block1 block1_for_fun (
+		.A0(A[0]),
+		.A1(A[1]),
+		.B0(B[0]),
+		.B1(B[1]),
+		.I0(I[0]),
+		.I1

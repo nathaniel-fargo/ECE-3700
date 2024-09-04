@@ -1,0 +1,17 @@
+module (
+	input [1:0] A,
+	input [1:0] B,
+	input [1:0] I,
+	output [1:0] F
+	)
+	
+	not(_A,A);
+	not(_B,B);
+	and(_A_B, _A, _B);
+	
+	
+	
+	
+	
+endmodule
+	
