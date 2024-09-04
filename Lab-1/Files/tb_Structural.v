@@ -16,24 +16,30 @@ module tb_Structural;
 	);
 	
 	
+	integer i, j;
 	initial begin
 	
-		num = 4'h0;
-	
+		for (i = 0; i < 16; i = i + 1) begin
 		
-		A = num[3:2];
-		B = num[1:0];
 	
-		I = 2'b00;
-		#5;
-		I = 2'b01;
-		#5;
-		I = 2'b10;
-		#5;
-		I = 2'b11;
-		#5;
+			num = i;
 		
-		num = num + 1;
+			
+			A = num[3:2];
+			B = num[1:0];
+			
+			$display("A is %x, B is %b", A, B);
+		
+			for (j = 0; j < 4; j = j + 1) begin
+			
+				I = j;
+				#5;
+				
+				$display("Instruction is %x output is %B", I, F); 
+			end
+			
+			
+		end
 			
 	end
 endmodule
