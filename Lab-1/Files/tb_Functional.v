@@ -1,4 +1,4 @@
-module tb_Structural;
+module tb_Functional;
 
 	reg [1:0] A;
 	reg [1:0] B;
@@ -8,7 +8,7 @@ module tb_Structural;
 	reg [3:0] num;
 	
 
-	Structural uut (
+	Functional uut (
 		.A(A),
 		.B(B),
 		.I(I),
