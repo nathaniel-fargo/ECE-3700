@@ -11,7 +11,7 @@ module Four_Bit_Adder (
 	
 	genvar i;
 	generate
-		 for (i = 0; i < 3; i = i + 1) begin : adders
+		 for (i = 0; i < 4; i = i + 1) begin : adders
 			  Full_Adder adder_inst (
 					.a(a[i]),
 					.b(b[i]),

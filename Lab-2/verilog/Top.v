@@ -4,12 +4,12 @@ module Top (
 	output [4:0] S
 	);
 	
-	Four_Bit_Adder four_bit_adder_inst (
-		.a(A),
-		.b(B),
-		.cin(1'b0),
-		.out(S[3:0]),
-		.cout(S[4])
+	Look_Ahead_Four_Bit_Adder four_bit_adder_inst (
+		.A(A),
+		.B(B),
+		.Cin(1'b0),
+		.Out(S[3:0]),
+		.Cout(S[4])
 	);
 
 endmodule

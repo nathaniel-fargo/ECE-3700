@@ -5,12 +5,19 @@ module tb_Four_Bit_Adder;
 	wire [3:0] out;
 	wire cout;
 
-	Four_Bit_Adder uut (
+	/*Four_Bit_Adder uut (
 		.a(a),
 		.b(b),
 		.cin(cin),
 		.out(out),
 		.cout(cout)
+	);*/
+	Look_Ahead_Four_Bit_Adder uut2 (
+		.A(a),
+		.B(b),
+		.Cin(cin),
+		.Out(out),
+		.Cout(cout)
 	);
 	
 	integer n, i, j;
