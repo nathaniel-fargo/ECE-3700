@@ -7,6 +7,6 @@ module Full_Adder (
 );
 
 	assign sum = a ^ b ^ cin;
-	cout = a & b | b & cin | cin & a;
+	assign cout = a & b | b & cin | cin & a;
 
 endmodule
