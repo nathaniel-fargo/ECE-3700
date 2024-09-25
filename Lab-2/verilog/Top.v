@@ -15,7 +15,7 @@ module Top (
 	*/
 	
 	///*
-	Look_Ahead_Four_Bit_Adder four_bit_adder_inst (
+	Eight_Bit_Adder four_bit_adder_inst (
 		.a(A),
 		.b(B),
 		.cin(1'b0),

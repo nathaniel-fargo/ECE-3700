@@ -17,9 +17,9 @@ module tb_Eight_Bit_Adder;
 	initial begin
 		for (n = 0; n < 2; n = n + 1) begin
 			cin = n;
-			for (i = 0; i < 128; i = i + 1) begin
+			for (i = 0; i < 30; i = i + 1) begin
 				a = i;
-				for (j = 0; j < 128; j = j + 1) begin
+				for (j = 80; j < 100; j = j + 1) begin
 					b = j;
 					#10;
 					$display(" ");

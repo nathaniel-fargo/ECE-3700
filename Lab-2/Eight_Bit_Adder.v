@@ -2,7 +2,7 @@ module Eight_Bit_Adder (
 	input [7:0] a,
 	input [7:0] b,
 	input cin,
-	output [7:0] sum,
+	output [7:0] out,
 	output cout
 	);
 	
@@ -12,7 +12,7 @@ module Eight_Bit_Adder (
 		.a(a[3:0]),
 		.b(b[3:0]),
 		.cin(cin),
-		.out(sum[3:0]),
+		.out(out[3:0]),
 		.cout(carry)
 	);
 	
@@ -20,7 +20,7 @@ module Eight_Bit_Adder (
 		.a(a[7:4]),
 		.b(b[7:4]),
 		.cin(carry),
-		.out(sum[7:4]),
+		.out(out[7:4]),
 		.cout(cout)
 	);
 	
