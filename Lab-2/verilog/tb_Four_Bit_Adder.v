@@ -5,20 +5,24 @@ module tb_Four_Bit_Adder;
 	wire [3:0] out;
 	wire cout;
 
-	/*Four_Bit_Adder uut (
+	///*
+	Four_Bit_Adder uut (
 		.a(a),
 		.b(b),
 		.cin(cin),
 		.out(out),
 		.cout(cout)
-	);*/
-	Look_Ahead_Four_Bit_Adder uut2 (
-		.A(a),
-		.B(b),
-		.Cin(cin),
-		.Out(out),
-		.Cout(cout)
 	);
+	//*/
+	/*
+	Look_Ahead_Four_Bit_Adder uut2 (
+		.a(a),
+		.b(b),
+		.cin(cin),
+		.out(out),
+		.cout(cout)
+	);
+	*/
 	
 	integer n, i, j;
 	initial begin
@@ -29,6 +33,12 @@ module tb_Four_Bit_Adder;
 				for (j = 0; j < 16; j = j + 1) begin
 					b = j;
 					#10;
+					$display(" ");
+					$display("cin is %d", cin);
+					$display("a is %d", a);
+					$display("b is %d", b);
+					$display("sum is %d", out);
+					$display("cout is %d", cout);
 				end
 			end
 		end
