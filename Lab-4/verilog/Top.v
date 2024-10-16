@@ -37,9 +37,9 @@ module Top (
 		// handle inputs here
 		if (reset) begin
 			state <= RESET;
-		end else if (stop | (state == RESET)) begin
+		end else if (~stop | (state == RESET)) begin
 			state <= IDLE;
-		end else if (start) begin
+		end else if (~start) begin
 			state <= COUNTING;
 		end
 		
