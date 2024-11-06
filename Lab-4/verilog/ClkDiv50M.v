@@ -5,9 +5,9 @@ module ClkDiv50M (
 	input reset
 );
 
-	reg [31:0] clk_div;
-
+	reg [31:0] clk_div = 0;
 	reg reset_prev = 0;
+	
 	always @(posedge clk_50mhz) begin
 	
 		reset_prev <= reset;
@@ -27,7 +27,8 @@ module ClkDiv50M (
 			
 			clk_div <= clk_div + 1;
 			
-			if (clk_div == 24_999_999) begin
+			//if (clk_div == 24_999_999) begin
+			if (clk_div == 500) begin
 				clk_div <= 0;
 				clk_1hz <= ~clk_1hz;
 			end
